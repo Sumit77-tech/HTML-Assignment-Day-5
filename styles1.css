@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .box {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  #block-element {
+    display: block;
+    background-color: #ffcccc;
+  }
+  #inline-element {
+    display: inline;
+    background-color: #ccffcc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #inline-block-element {
+    display: inline-block;
+    background-color: #ccccff;
+    width: 150px;
+    text-align: center;
+  }
+  #hidden-element {
+    display: none;
+    background-color: #f4f4f4;
+    color: gray;
+    border-style: dashed;
+  }
+  
