@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Properties</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <h1>CSS Display Properties</h1>
+  <p>Below are examples of elements with different CSS display properties.</p>
+
+  <div id="block-element" class="box">Block Element: I take up the full width!</div>
+  <span id="inline-element" class="box">Inline Element: I'm inline!</span>
+  <div id="inline-block-element" class="box">Inline-block Element: I behave like a block, but inline.</div>
+  <div id="hidden-element" class="box">Hidden Element: Toggle me with the button!</div>
+
+  <button id="toggle-button">Toggle Hidden Element</button>
+
+  <script>
+    document.getElementById("toggle-button").addEventListener("click", () => {
+      const hiddenElement = document.getElementById("hidden-element");
+      hiddenElement.style.display = hiddenElement.style.display === "none" ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
